@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Search Input Example</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-ABCDEF" crossorigin="anonymous">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <!-- Custom CSS -->
+    <style>
+        .search-input {
+            border: 2px solid red; /* Red border for the input */
+        }
+
+        .search-icon {
+            background-color: red; /* Red background for the icon */
+            color: white; /* White color for the icon */
+            border-left: none; /* Remove left border of the input-group-text */
+        }
+
+        .input-group .search-input {
+            border-right: none; /* Remove right border of the input */
+        }
+
+        .input-group .form-control,
+        .input-group .input-group-text {
+            height: 100%; /* Make sure they have the same height */
+        }
+    </style>
+</head>
+<body>
+    <div class="container mt-5">
+        <div class="input-group" style="display: flex; align-items: stretch; border: 2px solid black;">
+            <input type="text" class="form-control search-input" placeholder="Search" aria-label="Search" aria-describedby="basic-addon1">
+            <div class="input-group-prepend">
+                <span class="input-group-text search-icon"><i class="fas fa-search"></i></span>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bootstrap JS and dependencies -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha384-ABCDEF" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.9.3/umd/popper.min.js" integrity="sha384-ABCDEF" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/5.3.0/js/bootstrap.min.js" integrity="sha384-ABCDEF" crossorigin="anonymous"></script>
+</body>
+</html>

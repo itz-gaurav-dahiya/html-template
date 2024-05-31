@@ -1,0 +1,95 @@
+/* navbar */
+.Studyhub{
+    color: blue;
+}
+/* styles.css */
+
+.login{
+    margin-right: 2px;
+}
+.parentdiv{
+margin: 0px;
+padding: 0px;
+}
+/* banndr  */
+.banneraria{
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    padding-left: 20px;
+    height: 300px;
+    
+}
+.serchdiv {
+    background-color: rgb(251, 251, 251); /* Background color */
+    border: 2px solid red; /* Border color */
+    border-radius: 5px; /* Rounded corners */
+}
+.custom-search-icon {
+    background-color: red; /* Background color */
+}
+
+/* slidebar */
+.card {
+    width: 18rem;
+    margin: 10px;
+    
+  }
+  .card {
+    margin: 10px;
+    /* width: calc(100% / 3 - 20px); Adjust width of each card */
+  }
+  .card-group {
+    overflow-x: auto;
+    white-space: nowrap;
+  }
+
+
+  /* awards */
+  * {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.card-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+    max-width: 100%;
+    padding: 10px;
+}
+
+.card {
+    flex: 1 1 calc(20% - 10px);
+    min-width: 150px; /* Ensures cards don't get too small on very small screens */
+    background-color: #f0f0f0;
+    border: 1px solid #ccc;
+    padding: 20px;
+    text-align: center;
+    transition: transform 0.3s ease-in-out;
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+@media (max-width: 768px) {
+    .card {
+        flex: 1 1 calc(33.33% - 10px); /* 3 cards per row on tablets */
+    }
+}
+
+@media (max-width: 480px) {
+    .card {
+        flex: 1 1 calc(50% - 10px); /* 2 cards per row on mobile */
+    }
+}

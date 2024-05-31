@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .whyMinDiv {
+            display: flex;
+            margin-top: 50px;
+            flex-wrap: wrap;
+            /* border: 2px solid black; */
+            width: 90%;
+            margin-left: auto;
+            margin-right: auto;
+            justify-content: space-around;
+            gap: 1rem;
+        }
+        .cardwhy {
+            /* border: 2px solid black; */
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 100%;
+            max-width: 18rem;
+            box-sizing: border-box;
+        }
+        .card-img-top {
+            /* border: 2px solid black; */
+            width: 60%;
+            height: auto;
+        }
+        .card-body {
+            /* border: 2px solid black; */
+            width: 80%;
+            text-align: center;
+        }
+        .card-body p:first-child {
+            margin: 5px;
+            font-size: larger;
+            font-family: sans-serif;
+        }
+        .card-body p:last-child {
+            margin: 2px;
+            font-family: sans-serif;
+            font-weight: lighter;
+            color: rgb(100, 96, 96);
+        }
+
+        @media (max-width: 768px) {
+            .whyMinDiv {
+                flex-direction: column;
+                align-items: center;
+            }
+            .cardwhy {
+                max-width: 100%;
+            }.cardwhy img{
+                height: auto;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="whyMinDiv">
+        <div class="cardwhy">
+            <img class="card-img-top" src="https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcT86m0AXLvIkRvny43h8gVOauN4M0ubDw_46fJh5cu2y52dqLQL" alt="Card image cap " style="height: 60%;">
+            <div class="card-body">
+              <p>Jumbo Pass</p>
+              <p>Unlimited Classes for 365 day</p>
+            </div>
+        </div>
+        <div class="cardwhy">
+            <img class="card-img-top" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSatF0hAyaNbaLQhNPqjbJxWClxt_GcRplvkcdvBfgfyqFCD4LU" alt="Card image cap" style="height: 60%;">
+            <div class="card-body">
+              <p>INterest-Free EMI</p>
+              <p>Across All Credit/Debit Cards</p>
+            </div>
+        </div>
+        <div class="cardwhy">
+            <img class="card-img-top" src="https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQOaLqusGqNL96iMsP6tIWOdTjKK-zjqq3hipc08KhyZEJTgCw3" alt="Card image cap" style="height: 60%;">
+            <div class="card-body">
+              <p>4.8/5 Stars on Google Reviews</p>
+              <p>Unlimited Classes for 365 day</p>
+            </div>
+        </div>
+        <div class="cardwhy">
+            <img class="card-img-top" src="https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcR07oy0Fhnq_9h_K16BJMeJ73c_5EkSt2vRwrTswm_MYcbYiW3F" alt="Card image cap" style="height: 60%;">
+            <div class="card-body">
+              <p>100% Placement Assistance</p>
+              <p>with our dedicated placement cell</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
